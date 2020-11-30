@@ -35,5 +35,6 @@ const createCalendar = () => {
         }
     }
 }
+createCalendar() /*Run function at page start*/
 
 button.addEventListener('click', createCalendar);
