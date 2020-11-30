@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-start {
+    display: block;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 800px;
+    height: 900px;
+    border: 5px solid #777;
+    margin: 1rem auto;
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "door19 door7 door8 door5"
+        "door9 door10 door11 door12"
+        "door22 door18 door24 door14"
+        "door13 door20 door15 door16"
+        "door1 door4 door3 door2"
+        "door21 door17 door23 door6"
+    ;
+    
+}
+
+.image {
+    background-color: rgba(0, 0, 0, 0.445);
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    /*grid-area: door6;*/
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    border: 2px solid #777;
+    font-size: 2rem;
+    transition: opacity 2s;
+}
